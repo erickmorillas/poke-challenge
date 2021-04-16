@@ -1,0 +1,284 @@
+/* 
+ CSS GLOBALS
+*/
+
+body {
+  background: #f9f9f9;
+  font-family: Lato;
+  font-style: normal;
+  color: #5e5e5e;
+}
+
+.Container__Main {
+  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.Container {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+/* BUTTONS */
+.button-default {
+  background-color: #bfbfbf !important;
+  border-radius: 60px !important;
+  padding: 11px 20px !important;
+  width: auto !important;
+  color: #ffffff !important;
+  border: 0px !important;
+  line-height: initial !important;
+  box-shadow: none !important;
+}
+
+.button-primary {
+  background-color: #f22539 !important;
+  border-radius: 60px !important;
+  padding: 11px 20px !important;
+  width: auto !important;
+  color: #ffffff !important;
+  border: 0px !important;
+  line-height: initial !important;
+  box-shadow: none !important;
+}
+
+.button-start {
+  background-color: #f5f5f5 !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+.button-start i {
+  font-size: 30px !important;
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  color: #bfbfbf;
+}
+
+.Container__search {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  height: 50px;
+  margin: 0px !important;
+}
+
+/* INPUT SEARCH */
+
+.Container__search i {
+  top: 10px !important;
+  left: 8px;
+}
+
+.Container__search .prefix.active {
+  color: #f22539 !important;
+}
+
+.Container__search input {
+  border: 0px !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  height: 100% !important;
+  margin-bottom: 0px !important;
+}
+
+.Container__search input:focus {
+  border: 0px !important;
+  box-shadow: none !important;
+}
+
+/* NAV MENU */
+
+.Container__Menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+
+  background: #ffffff;
+  box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu__bar {
+  height: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu__bar .router-link-active {
+  background-color: #f22539 !important;
+}
+
+.Menu__bar a {
+  width: 46% !important;
+}
+
+.Menu__bar a i {
+  vertical-align: middle;
+}
+
+/* CONTAINER TABLE */
+.Container__table {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  overflow-y: auto;
+  height: auto;
+  bottom: 0px;
+  top: 80px;
+  overflow-x: hidden;
+}
+
+.Container__table table {
+  border-collapse: separate !important;
+  border-spacing: 0px 8px;
+}
+
+.Container__table table tr {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.Container__table table td {
+  color: #353535;
+  cursor: pointer;
+}
+
+.Container__table table tr .name {
+  width: 90%;
+  text-transform: capitalize;
+}
+
+.Container__table table tr .button {
+  width: 10%;
+  text-align: center;
+}
+
+.Container__table table tr .button .__favorite {
+  background-color: #f5f5f5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Container__table table tr .button .factive i {
+  color: #eca539 !important;
+}
+
+.Container__table table tr .button .__favorite i {
+  color: #bfbfbf;
+  line-height: normal;
+  width: 24px;
+}
+
+/* MODAL*/
+
+.modal {
+  /* ... */
+}
+
+.modal .modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.modal .modal-content {
+  position: relative;
+  padding: 0px !important;
+}
+
+.modal .modal-content .cover__Page {
+  position: relative;
+}
+
+.modal .modal-content .cover__Page .back__image {
+  width: 100%;
+  height: 180px;
+}
+
+.modal .modal-content .cover__Page .front_pokemon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 179px;
+}
+
+.modal .modal-content .info__pokemon {
+  width: 90%;
+  margin: auto;
+}
+
+.modal .modal-content .info__pokemon table tr td {
+  text-transform: capitalize;
+}
+
+.modal .modal-footer {
+  width: 90% !important;
+  margin: auto !important;
+  left: 0px;
+  right: 0px;
+  border: 0px !important;
+}
+
+/* MESSAGE */
+.Message__empty {
+  text-align: center;
+}
+
+/* Loading */
+
+.Load {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  background-color: #f9f9f95e;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.Load .preloader-wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 120px !important;
+  height: 120px !important;
+}
+
+/*  MEDIA */
+
+@media only screen and (max-width: 601px) {
+  .Container {
+    width: 90%;
+  }
+}

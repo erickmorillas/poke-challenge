@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
 
-createApp(App).use(router).mount('#app')
+import "./assets/css/Style.css";
+import "materialize-css/dist/css/materialize.css";
+
+createApp(App)
+  .use(router)
+  .use(store)
+  .mount("#app");
